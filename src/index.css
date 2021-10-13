@@ -1,0 +1,34 @@
+@tailwind base;
+
+@tailwind components;
+body {
+  @apply bg-trueGray-900 text-white;
+}
+.loader {
+  @apply flex justify-center items-center h-screen bg-black;
+}
+.input {
+  @apply w-full py-4 pl-4 mb-4 rounded-lg text-base align-text-top text-justify bg-black bg-opacity-40 text-white placeholder-trueGray-500 outline-none;
+}
+/* .chevron {
+  @apply flex items-center bg-trueGray-700 mx-2 px-2 rounded-full cursor-pointer;
+} */
+.tab-container {
+  @apply w-full bg-trueGray-800 z-10 cursor-pointer text-sm my-4 mr-2.5 last:mr-0 py-2 px-2 rounded-md sm:w-72 hover:bg-white hover:text-black transition delay-100 duration-100 ease-in-out;
+}
+.tab-flex {
+  @apply flex justify-between;
+}
+.li {
+  @apply cursor-pointer box-border hover:box-border hover:text-black hover:bg-trueGray-300 rounded-md pl-2;
+}
+.page {
+  @apply bg-trueGray-700 rounded-lg;
+}
+.button {
+  @apply flex justify-center bg-trueGray-800 cursor-pointer p-4 my-4 rounded-lg hover:bg-white hover:text-black transform hover:-translate-y-0.5 md:mt-0;
+}
+.fav-button {
+  @apply flex justify-center text-green-500 border-green-500 border-2 bg-trueGray-800 cursor-pointer p-4 my-4 rounded-lg hover:bg-white hover:text-black transform hover:-translate-y-0.5 md:mt-0;
+}
+@tailwind utilities;
