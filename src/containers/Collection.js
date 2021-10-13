@@ -17,7 +17,6 @@ const Collection = ({ userToken }) => {
         const response = await axios.get(
           // "http://localhost:4000/favorites",
           "https://api--gamepad.herokuapp.com/favorites",
-
           {
             headers: {
               Authorization: `Bearer ${userToken}`,
@@ -48,6 +47,8 @@ const Collection = ({ userToken }) => {
       }
     );
     console.log("deleted");
+    setData(response.data);
+    setIsLoading(false);
     setRefresh(refresh + 1);
   };
 
